@@ -5,4 +5,5 @@
 //  Created by 유뇽 on 3/3/24.
 //
 
-import Foundation
+let happy = false
+
