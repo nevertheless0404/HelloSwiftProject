@@ -92,3 +92,39 @@ let number: Int = 123
 
 let value: Double
 value = 12.3
+
+// Strings and Characters
+
+let s = "Hello, world"
+let loremIspum = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, \nsed do eiusmod tempor incididunt ut labore et dolore magna liqus."
+
+let mulitline = """
+"Lorem ipsum dolor sit amet, 
+consectetur adipiscing elit,
+sed do eiusmod tempor incididunt ut labore et dolore magna liqus.
+"""
+print(mulitline)
+
+var nsstr: NSString = "str"
+let swiftStr: String = nsstr as String
+nsstr = swiftStr as NSString
+
+// string Interpolation
+var Str = "12.34KB"
+let size = 12.34
+Str = String(size) + "KB"
+Str = "\(size)KB"
+
+// %char
+String(format: "%.5fKB", size)
+String(format: "Hello, %@", "Swift")
+
+String(format: "%d", 12)
+String(format: "%f", 12.34)
+String(format: "%.3f", 12.34)
+
+Str = "\\"
+print("A\tB")
+print(#""Hello"\#n he said."#)
+
+
